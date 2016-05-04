@@ -17,3 +17,10 @@ Proyecto final de DAW
 1. Instalar `Node.JS`
 2. En la carpeta `_src` ejecutar el comando `npm install`
 3. En la misma carpeta ejecutar `gulp`
+
+### Crear la base de datos y rellenarla con datos usando Faker:
+
+1. En la carpeta `gamehub` ejecutar los siguientes comandos:
+
+- `php artisan migrate`
+- `php artisan db:seed --class=UserSeeder`
