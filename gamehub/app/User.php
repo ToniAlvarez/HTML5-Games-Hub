@@ -23,4 +23,20 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function isAdmin()
+    {
+        return $this->tipo === 'admin';
+    }
+
+    public function isDev()
+    {
+        return $this->tipo === 'dev';
+    }
+
+    public function isUser()
+    {
+        return $this->tipo === 'user';
+    }
+
 }
