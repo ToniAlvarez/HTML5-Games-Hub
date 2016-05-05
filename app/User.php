@@ -24,17 +24,17 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function isAdmin()
+    public function getIsAdminAttribute()
     {
         return $this->tipo === 'admin';
     }
 
-    public function isDev()
+    public function getIsDevAttribute()
     {
         return $this->tipo === 'dev';
     }
 
-    public function isUser()
+    public function getIsUserAttribute()
     {
         return $this->tipo === 'user';
     }
