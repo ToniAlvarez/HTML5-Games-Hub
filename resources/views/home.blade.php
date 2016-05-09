@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('base.base')
 
 @section('content')
 <div class="container">
@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    Has iniciado sesión.
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('base.base')
 
 @section('content')
 <div class="container">
@@ -10,7 +10,7 @@
                 <div class="panel-body">
 
 
-                    Your Application's Landing Page.
+                    Página de inicio.
                 </div>
             </div>
         </div>
