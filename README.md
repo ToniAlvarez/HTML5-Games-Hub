@@ -5,6 +5,7 @@ Proyecto final de DAW
 ## Requisitos del proyecto
 
 * [Node.JS](https://nodejs.org)
+* [Composer](https://getcomposer.org/download/)
 
 ### Instrucciones de instalación en servidor local
 
@@ -14,8 +15,9 @@ Proyecto final de DAW
 ### Pasos para compilar el tema de Bootstrap con Gulp:
 
 1. Instalar `Node.JS`
-2. En la carpeta `/resources/assets/_src` ejecutar el comando `npm install`
-3. Ejecutar `gulp copy` en la raíz del proyecto
+2. Ejecutar el comando `npm install`
+3. Ejecutar `gulp less` para compilar el Less a CSS
+4. Ejecutar `gulp copy` para copiar el CSS a la carpeta `public`
 
 ### Crear la base de datos y rellenarla con datos usando Faker:
 
