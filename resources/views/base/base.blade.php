@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="es">
 <head>
 
     <!-- Meta Tags -->
@@ -17,9 +17,19 @@
     <title>@yield('title')</title>
 
     <!-- Stylesheet -->
-    <link href="{{ URL::to('/') }}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url('/') }}/css/bootstrap.css" rel="stylesheet" type="text/css">
+
     <!-- CSS | Custom Margin Padding Collection -->
-    <link href="{{ URL::to('/') }}/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+    <link href="{{ url('/') }}/css/custom-margins.css" rel="stylesheet" type="text/css">
+
+    <!-- Font-Awesome -->
+    <link href="{{ url('/') }}/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- jQuery -->
+    <script src="{{ url('/') }}/js/jquery-2.2.4.min.js"></script>
+
+    @yield('game-assets')
+
 </head>
 <body>
 <div id="wrapper">
@@ -43,7 +53,6 @@
 
 
 <!-- external javascripts -->
-<script src="{{ URL::to('/') }}/js/jquery-2.2.0.min.js"></script>
 <script src="{{ URL::to('/') }}/js/bootstrap.min.js"></script>
 
 </body>
