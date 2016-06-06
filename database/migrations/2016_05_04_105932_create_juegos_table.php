@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJuegoTable extends Migration
+class CreateJuegosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,13 @@ class CreateJuegoTable extends Migration
     {
         Schema::create('juegos', function (Blueprint $table) {
             $table->increments('id');
-            $table->char('nombre');
+            $table->string('url')->unique();
+            $table->string('nombre');
+            $table->string('descripcion');
+            $table->string('imagen');
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
