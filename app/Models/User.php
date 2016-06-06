@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -26,17 +26,31 @@ class User extends Authenticatable
 
     public function getIsAdminAttribute()
     {
-        return $this->tipo === 'admin';
+        return $this->tipo === 'Administrador';
     }
 
     public function getIsDevAttribute()
     {
-        return $this->tipo === 'dev';
+        return $this->tipo === 'Desarrollador';
     }
 
     public function getIsUserAttribute()
     {
-        return $this->tipo === 'user';
+        return $this->tipo === 'Usuario';
     }
 
+    /**
+     * Devuelve los juegos del desarrollador
+     */
+    public function juegos()
+    {
+        return $this->hasMany('App\Models\Juego');
+    }
+    /**
+     * Devuelve los comentarios de un usuario
+     */
+    public function valoracions()
+    {
+        return $this->hasMany('App\Models\Valoracion');
+    }
 }
