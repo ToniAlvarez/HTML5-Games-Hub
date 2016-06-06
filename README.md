@@ -12,6 +12,7 @@ Proyecto final de DAW
 1. Crear un host virtual que apunte a la carpeta `htdocs`
 2. Ejecutar `composer install` y `npm install` en la raíz del proyecto
 3. Hay que dar permisos de escritura en las carpetas `storage`, `htdocs`, `bootstrap/cache`
+4. Configurar los datos de acceso a la BD en el fichero `.env`
 
 ### Pasos para compilar el tema de Bootstrap con Gulp:
 
