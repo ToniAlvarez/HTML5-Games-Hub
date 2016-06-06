@@ -1,0 +1,93 @@
+// Gamehub Custom Styles
+// -----------------------------------------------------
+
+.thumbnail .avatar-40 {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.thumbnail .avatar-50 {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.avatar-100 {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.avatar-150 {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+a {
+  &.success {
+    color: #28B62C;
+  }
+
+  &.info {
+    color: #158CBA;
+  }
+
+  &.danger {
+    color: #FF4136;
+  }
+}
+
+//Lista de usuarios
+.table.user-list > {
+
+  thead > tr > th {
+    text-transform: uppercase;
+  }
+
+  tbody > tr > td {
+
+    vertical-align: middle;
+
+    a,
+    button {
+
+      text-decoration: none;
+
+      &.success {
+        color: #28B62C;
+      }
+
+      &.info {
+        color: #158CBA;
+      }
+
+      &.danger {
+        color: #FF4136;
+      }
+    }
+
+    form {
+      display: inline;
+
+      button.submit-link {
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .user-link {
+      display: block;
+      font-size: 1.2em;
+      padding-top: 3px;
+    }
+
+    .user-type {
+      font-style: italic;
+    }
+
+    .avatar-list {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+}
