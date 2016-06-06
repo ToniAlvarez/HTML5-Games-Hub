@@ -13,8 +13,7 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.less('bootstrap/bootstrap.less', 'resources/assets/css/bootstrap.css');
-
-    mix.copy('resources/assets/css', 'public/css');
-    mix.copy('resources/assets/js', 'public/js');
-    mix.copy('resources/assets/fonts', 'public/fonts');
+    mix.copy('resources/assets/css', 'htdocs/css');
+    mix.copy('resources/assets/js', 'htdocs/js');
+    mix.copy('resources/assets/fonts', 'htdocs/fonts');
 });
