@@ -17,8 +17,8 @@ Proyecto final de DAW
 
 1. Instalar `Node.JS`
 2. Ejecutar el comando `npm install`
-3. Ejecutar `gulp less` para compilar el Less a CSS
-4. Ejecutar `gulp copy` para copiar el CSS a la carpeta `public`
+3. Ejecutar `gulp less` para compilar el LESS a CSS
+4. Ejecutar `gulp copy` para copiar el CSS a la carpeta `htdocs`
 
 ### Crear la base de datos y rellenarla con datos usando Faker:
 
