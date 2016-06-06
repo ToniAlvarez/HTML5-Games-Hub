@@ -9,8 +9,9 @@ Proyecto final de DAW
 
 ### Instrucciones de instalación en servidor local
 
-1. Crear un host virtual que apunte a la carpeta `public`
+1. Crear un host virtual que apunte a la carpeta `htdocs`
 2. Ejecutar `composer install` y `npm install` en la raíz del proyecto
+3. Hay que dar permisos de escritura en las carpetas `storage`, `htdocs`, `bootstrap/cache`
 
 ### Pasos para compilar el tema de Bootstrap con Gulp:
 
@@ -24,4 +25,4 @@ Proyecto final de DAW
 1. En la raíz del proyecto ejecutar los siguientes comandos:
 
 - `php artisan migrate`
-- `php artisan db:seed --class=UserSeeder`
+- `php artisan db:seed --class=DatabaseSeeder`
